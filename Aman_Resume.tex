@@ -1,109 +1,124 @@
-\documentclass[a4paper,12pt]{article}
-
-\usepackage[margin=1in]{geometry}
+\documentclass[13pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % Fixes font mapping issues
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{xcolor}
-\usepackage{hyperref}
 
-% Define colors
-\definecolor{primary}{HTML}{1F4E79}
-\definecolor{secondary}{HTML}{4F81BD}
+% Colors
+\definecolor{primary}{RGB}{0, 73, 135}
 
-\hypersetup{
-    colorlinks=true,
-    urlcolor=primary
+% Formatting
+\titleformat{\section}{\Large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{4pt}\item
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4} \vspace{-4pt}
 }
 
-% Section styling
-\titleformat{\section}
-{\color{primary}\large\bfseries}
-{}{0em}{}[\titlerule]
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{4pt}\item
+    \textbf{#1} \hfill \textit{#2} \vspace{-4pt}
+}
 
 \begin{document}
 
 % Header
 \begin{center}
-    {\Huge \textbf{\color{primary} Aman Yadav}} \\
-    \vspace{2mm}
-    {\color{secondary} Final Year B.Sc. (Hons.) Biotechnology Student} \\
-    \vspace{2mm}
-    Delhi (NCR), India \\
-    \href{mailto:aman0001yadavdu@gmail.com}{aman0001yadavdu@gmail.com} | +91-9971821769 \\
-    \href{https://www.linkedin.com/in/aman-yadav-4000-k/}{LinkedIn} \quad | \quad
-    \href{https://github.com/aman0001yadavdu-bit}{GitHub}
+    {\Huge \textbf{Aman Yadav}} \\ \vspace{4pt}
+    {\large Final Year B.Sc. (Hons.) Biotechnology with Research} \\ \vspace{2pt}
+    \small Delhi (NCR) $|$ +91-9971821769 $|$ \href{mailto:aman0001yadavdu@gmail.com}{\color{primary}aman0001yadavdu@gmail.com} \\
+    \href{https://www.linkedin.com/in/aman-yadav-4000-k/}{\color{primary}LinkedIn: aman-yadav-4000-k} $|$
+    \href{https://github.com/aman0001yadavdu-bit}{\color{primary}GitHub: aman0001yadavdu-bit}
 \end{center}
 
-\vspace{5mm}
-
-\section*{Profile}
-Final year B.Sc. (Hons.) Biotechnology student with research experience and strong interest in bioinformatics and data analysis. Skilled in RNA-Seq analysis, machine learning, and computational biology.
-
-\section*{Education}
-\textbf{B.Sc. (Hons.) Biotechnology} \\
-Gautam Buddha University (GBU) \hfill Final Year
-
-\section*{Technical Skills}
-\begin{itemize}[noitemsep]
-    \item \textbf{Programming:} Python, R
-    \item \textbf{Tools:} AutoDock, PyMOL, OpenBabel, RStudio, Linux
-    \item \textbf{Bioinformatics:} RNA-Seq, scRNA-Seq Analysis
-    \item \textbf{Web:} HTML5, CSS
-    \item \textbf{Core:} Machine Learning, Data Analysis, Scientific Thinking
+% Education
+\section{Education}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+        {Gautam Buddha University (GBU)}{Greater Noida, India}
+        {B.Sc. (Hons.) Biotechnology with Research}{Expected 2026}
+        \begin{itemize}
+            \resumeItem{Focus on Bioinformatics, Data Analysis, and Computational Biology.}
+            \resumeItem{Gained foundational wet lab skills including Plasmid Isolation, PCR, and DNA Extraction.}
+        \end{itemize}
 \end{itemize}
 
-\section*{Projects}
-
-\textbf{Major Project} \\
-\textit{Screening of Differentially Expressed Genes for Parkinson’s Disease using ML and scRNA Analysis}
-\begin{itemize}[noitemsep]
-    \item Performed scRNA-Seq analysis using R and RStudio
-    \item Worked in Linux environments (Ubuntu, Fedora)
+% Technical Skills
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Programming \& Web:} Python, R, HTML5, CSS, Backend Development
+    \item \textbf{Bioinformatics \& Data Science:} Single-Cell RNA-Seq (scRNA-Seq) Analysis, Bulk RNA-Seq Analysis, Machine Learning, Differential Gene Expression (DEG), Computational Biology
+    \item \textbf{Tools \& Software:} RStudio, AutoDock, PyMOL, OpenBabel, Seurat, Harmony, Scanpy
+    \item \textbf{Operating Systems:} Linux, Fedora, Ubuntu, Windows
+    \item \textbf{Wet Lab:} Plasmid Isolation, PCR, DNA Extraction
 \end{itemize}
 
-\textbf{Minor Project} \\
-\textit{Screening of Significant DEGs for Parkinson’s Disease}
-\begin{itemize}[noitemsep]
-    \item RNA-Seq analysis using Python and machine learning
+% Experience
+\section{Experience}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+        {Research Intern -- Computational Biology}{Summer 2025}
+        {Gautam Buddha University}{}
+        \begin{itemize}
+            \resumeItem{Project: \textit{Screening of potential dual inhibitors of SGLT1 and SGLT2 in diabetes mellitus therapy}.}
+            \resumeItem{Applied computational biology and bioinformatics techniques utilizing AutoDock, PyMOL, and OpenBabel.}
+            \resumeItem{Developed scientific thinking and analytical skills for target-based drug discovery applications.}
+        \end{itemize}
+    \resumeSubheading
+        {Freelance Web Developer}{2025 -- 2026}
+        {The Food Adda}{}
+        \begin{itemize}
+            \resumeItem{Designed and developed a responsive cafeteria website using HTML5 and CSS (\href{https://aman0001yadavdu-bit.github.io/The-Food-Adda-Website/}{Portfolio Link}).}
+            \resumeItem{Gained hands-on experience in backend development and freelance client delivery.}
+        \end{itemize}
 \end{itemize}
 
-\textbf{Freelance Project} \\
-\textit{The Food Adda Website} \\
-\href{https://aman0001yadavdu-bit.github.io/The-Food-Adda-Website/}{Project Link}
-\begin{itemize}[noitemsep]
-    \item Built using HTML5 and CSS
+% Academic Projects
+\section{Academic Projects}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeProjectHeading
+        {Screening of DEG for Parkinson's Disease (scRNA-Seq)}{8th Semester Major Project}
+        \begin{itemize}
+            \resumeItem{Performed single-cell RNA-Seq data analysis (leveraging packages like Seurat and Harmony) on Parkinson's disease datasets (e.g., GSE202210) using RStudio.}
+            \resumeItem{Identified differentially expressed genes and utilized Linux (Ubuntu/Fedora) for high-performance computing.}
+            \resumeItem{Source code available on \href{https://github.com/aman0001yadavdu-bit}{GitHub}.}
+        \end{itemize}
+    \resumeProjectHeading
+        {Screening of Significant DEG for Parkinson's Disease}{7th Semester Minor Project}
+        \begin{itemize}
+            \resumeItem{Analyzed bulk RNA-Seq datasets utilizing Python programming (Scanpy, etc.) to identify target genes.}
+            \resumeItem{Applied machine learning algorithms to evaluate and cluster differential gene expression profiles.}
+            \resumeItem{Source code available on \href{https://github.com/aman0001yadavdu-bit}{GitHub}.}
+        \end{itemize}
+    \resumeProjectHeading
+        {Personal Portfolio Website}{Independent Project}
+        \begin{itemize}
+            \resumeItem{Developed a digital web portfolio to showcase bioinformatics research, web development projects, and technical skills.}
+        \end{itemize}
 \end{itemize}
 
-\section*{Internship}
-\textbf{Summer Research Intern, GBU} \\
-\textit{Screening of Dual Inhibitors of SGLT1 and SGLT2}
-\begin{itemize}[noitemsep]
-    \item Used AutoDock, PyMOL, OpenBabel
-    \item Developed computational biology and analytical skills
+% Certifications
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Python for Data Science, AI \& Development}
+    \item \textbf{Machine Learning with Python}
 \end{itemize}
 
-\section*{Certifications}
-\begin{itemize}[noitemsep]
-    \item Python for Data Science, AI \& Development
-    \item Machine Learning with Python
-\end{itemize}
-
-\section*{Workshops}
-\begin{itemize}[noitemsep]
-    \item Neurotoxicity Analysis Training – Amity University
-    \item Career Counselling Workshop – GBU
-\end{itemize}
-
-\section*{Conferences}
-\begin{itemize}[noitemsep]
-    \item ICSBDD – Structural Biology and Drug Discovery
-    \item IC3ECSBHI-2026 – IEEE Conference
-\end{itemize}
-
-\section*{Leadership \& Volunteering}
-\begin{itemize}[noitemsep]
-    \item Discipline Committee Volunteer – ICSBDD
-    \item Student Coordinator \& Transport Team – IC3ECSBHI-2026
+% Conferences \& Workshops
+\section{Conferences \& Workshops}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{2nd IEEE International Conference on Cognitive Computing in Engineering, Communications, Sciences and Biomedical Health Informatics (IC3ECSBHI-2026):} Attended and Volunteered (Student Co-ordinator, Transport Team Member).
+    \item \textbf{International Conference on Structural Biology and Drug Discovery (ICSBDD):} Attended and Volunteered (Discipline Committee Member at University School of Biotechnology, GBU).
+    \item \textbf{Protecting Neurodegeneration: Hands-on Training on Cell-Based Neurotoxicity Analysis:} Workshop organized by Amity Centre of Nanomedicine, Amity University.
+    \item \textbf{Career Counselling for Biotechnology Students:} Workshop organized by University School of Biotechnology, GBU.
 \end{itemize}
 
 \end{document}
