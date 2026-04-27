@@ -2,9 +2,13 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aman-yadav-4000-k/)
 [![Email](https://img.shields.io/badge/Email-Contact_Me-red.svg?logo=gmail&logoColor=white)](mailto:aman0001yadavdu@gmail.com)
-[![Website](https://img.shields.io/badge/Portfolio-Visit_Site-brightgreen.svg?logo=googlechrome&logoColor=white)](https://aman0001yadavdu-bit.github.io/The-Food-Adda-Website/) ### 👨‍🔬 About Me
+[![Website](https://img.shields.io/badge/Portfolio-Visit_Site-brightgreen.svg?logo=googlechrome&logoColor=white)](https://aman0001yadavdu-bit.github.io/The-Food-Adda-Website/) 
+[![Resume](https://img.shields.io/badge/Resume-Download_PDF-ff69b4.svg?logo=readdotcv&logoColor=white)](./resume.pdf)
+
+### 👨‍🔬 About Me
 I am a Final Year **B.Sc. (Hons.) Biotechnology with Research** student at Gautam Buddha University, with a strong passion for integrating biological sciences with data-driven technologies. My focus lies in decoding complex biological data using computational biology, machine learning, and advanced bioinformatics pipelines.
 
+* 📄 **Check out my full background:** [**Download my Resume here**](./resume.pdf)
 * 🎓 **Currently studying:** Single-cell RNA-Seq (scRNA-Seq) Analysis, Bulk RNA-Seq Analysis, and Machine Learning.
 * 💻 **Currently working on:** Identifying differentially expressed genes (DEGs) for Parkinson's Disease using Python and R.
 * 🚀 **Freelance Experience:** Built full-stack and responsive websites (e.g., *The Food Adda*).
