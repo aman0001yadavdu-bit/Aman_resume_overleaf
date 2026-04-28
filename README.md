@@ -8,7 +8,7 @@
 ### 👨‍🔬 About Me
 I am a Final Year **B.Sc. (Hons.) Biotechnology with Research** student at Gautam Buddha University, with a strong passion for integrating biological sciences with data-driven technologies. My focus lies in decoding complex biological data using computational biology, machine learning, and advanced bioinformatics pipelines.
 
-* 📄 **Check out my full background:** [**Download my Resume here**](./resume.pdf)
+* 📄 **Check out my full background:** [**Download my Resume here**](./resume_A.pdf)
 * 🎓 **Currently studying:** Single-cell RNA-Seq (scRNA-Seq) Analysis, Bulk RNA-Seq Analysis, and Machine Learning.
 * 💻 **Currently working on:** Identifying differentially expressed genes (DEGs) for Parkinson's Disease using Python and R.
 * 🚀 **Freelance Experience:** Built full-stack and responsive websites (e.g., *The Food Adda*).
